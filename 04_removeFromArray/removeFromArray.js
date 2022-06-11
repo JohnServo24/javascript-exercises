@@ -36,6 +36,7 @@ const removeFromArray = (...args) => {
     // Then we include it to the new array
     // If the values inside of args[0] cannot be found in the values after args[0],
     // Then it is a value that shouldn't be removed since the values after args[0] are to be removed
+    // We create a new array and we will just not include the values after args[0] instead of deleting them
     array.forEach(items => {
         if(!args.includes(items)) {
             newArray.push(items);
