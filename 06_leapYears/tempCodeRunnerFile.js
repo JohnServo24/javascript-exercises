@@ -1,13 +1,11 @@
 const leapYears = num => {
-    if(num % 400 == 0) {
-        return true;
-    } else if (num % 4 == 0 && num % 100 != 0) {
+    if(num % 4 == 0 && (num % 100 == 0 && num % 400 == 0)) {
         return true;
     }
     return false;
 };
 
-console.log(leapYears(1996));
+console.log(leapYears(1997));
 
 // Do not edit below this line
 module.exports = leapYears;
