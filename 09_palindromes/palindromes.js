@@ -37,8 +37,7 @@ const palindromes = a => {
     // Without the ... it will point to the same memory as loweredArr which is why it will change
 
     // If the reversed array is equal to the main array, then it is a palindrome
-    if(loweredArr === reversedArr) return true;
-    return false;
+    return loweredArr === reversedArr;
 };
 
 a = 'ZZZZ car, a man, a maracaz.';
