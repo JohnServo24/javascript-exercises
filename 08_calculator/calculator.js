@@ -24,7 +24,11 @@ const power = (a, b) => a ** b;
 // If a = 0, then return 1 since 0! = 1
 // If its not 0, then subtract the number by 1 all the way down
 // and multiply all the way up
-const factorial = a => a === 0 ? 1 : a === 1 ? a : a * factorial(a - 1);
+// OLD
+// const factorial = a => a === 0 ? 1 : a === 1 ? a : a * factorial(a - 1);
+
+// better code
+const factorial = a => a === 0 ? 1 : a * factorial(a-1);
 
 // Do not edit below this line
 module.exports = {
